@@ -7,6 +7,9 @@
     "skipLibCheck": true,
     "lib": ["ESNext"],
     "jsx": "react-jsx",
-    "jsxImportSource": "hono/jsx"
-  }
+    "jsxImportSource": "hono/jsx",
+    "types": ["@cloudflare/workers-types"]
+  },
+  "include": ["src/**/*.ts", "drizzle/**/*.ts"],
+  "exclude": ["node_modules"]
 }

@@ -16,14 +16,19 @@
     "build": "pnpm -r run build",
     "lint": "eslint . --ext .js,.jsx,.ts,.tsx",
     "lint:fix": "eslint . --ext .js,.jsx,.ts,.tsx --fix",
-    "format": "prettier --write \"**/*.{js,jsx,ts,tsx,json,css,md}\""
+    "format": "prettier --write \"**/*.{js,jsx,ts,tsx,json,css,md}\"",
+    "db:generate": "drizzle-kit generate",
+    "db:push": "drizzle-kit push",
+    "db:studio": "drizzle-kit studio"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "@cloudflare/workers-types": "^4.20250504.0",
     "@typescript-eslint/eslint-plugin": "^8.31.1",
     "@typescript-eslint/parser": "^8.31.1",
+    "drizzle-kit": "^0.31.1",
     "eslint": "^9.22.0",
     "eslint-config-prettier": "^10.1.2",
     "eslint-plugin-prettier": "^5.2.6",
@@ -32,5 +37,9 @@
     "globals": "^16.0.0",
     "prettier": "^3.5.3",
     "typescript-eslint": "^8.26.1"
+  },
+  "dependencies": {
+    "@libsql/client": "^0.15.4",
+    "drizzle-orm": "^0.43.1"
   }
 }

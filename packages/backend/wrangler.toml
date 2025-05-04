@@ -1,0 +1,9 @@
+name = "techbook-library-backend"
+main = "src/index.ts"
+compatibility_date = "2023-09-01"
+
+# D1 データベースの設定
+[[d1_databases]]
+binding = "DB"
+database_name = "techbook-library-db"
+database_id = "7c176c91-28ad-451d-a04a-a6b6536b1450"
